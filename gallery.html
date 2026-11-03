@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>多爱好 · 页面预览</title>
+  <link rel="stylesheet" href="css/font.css" />
+  <style>
+    :root { --bg:#e8e2d8; --ink:#3a3a3a; --muted:#8a7c6b; --accent:#e8862a; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { min-height:100vh; background:var(--bg); font-family:'Noto Sans SC',sans-serif; color:var(--ink); padding:40px 24px 64px; }
+    .wrap { max-width:1100px; margin:0 auto; }
+    h1 { font-size:28px; font-weight:600; letter-spacing:-0.5px; }
+    p.sub { margin-top:8px; color:var(--muted); font-size:14px; }
+    .grid { margin-top:28px; display:grid; grid-template-columns:repeat(auto-fill,minmax(180px,1fr)); gap:12px; }
+    .card { display:flex; flex-direction:column; gap:6px; padding:16px; border-radius:16px; background:rgba(255,255,255,.72); border:1px solid rgba(255,255,255,.9); text-decoration:none; color:inherit; box-shadow:0 8px 24px rgba(140,115,85,.12); }
+    .card:hover { transform:translateY(-2px); }
+    .num { font-size:12px; color:var(--accent); font-weight:600; }
+    .name { font-size:15px; font-weight:500; }
+    .phones { margin-top:36px; display:flex; flex-wrap:wrap; gap:28px; justify-content:center; }
+    .phone-wrap { display:flex; flex-direction:column; gap:10px; align-items:center; }
+    .phone-wrap span { font-size:12px; color:var(--muted); }
+    iframe { width:402px; height:874px; border:0; border-radius:28px; box-shadow:0 16px 48px rgba(40,24,12,.18); background:#faf6f0; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>多爱好</h1>
+    <p class="sub">已锁定手机宽度 402px · 六个画板全部修复预览</p>
+    <div class="grid">
+      <a class="card" href="pages/01-home.html"><span class="num">01</span><span class="name">首页</span></a>
+      <a class="card" href="pages/02-hobbies.html"><span class="num">02</span><span class="name">爱好管理</span></a>
+      <a class="card" href="pages/03-record.html"><span class="num">03</span><span class="name">记录录入</span></a>
+      <a class="card" href="pages/04-stats.html"><span class="num">04</span><span class="name">统计复盘</span></a>
+      <a class="card" href="pages/05-calendar.html"><span class="num">05</span><span class="name">日历</span></a>
+      <a class="card" href="pages/06-settings.html"><span class="num">06</span><span class="name">设置</span></a>
+    </div>
+    <div class="phones">
+      <div class="phone-wrap"><span>01 · 首页</span><iframe src="pages/01-home.html" title="01 · 首页" loading="lazy"></iframe></div>
+      <div class="phone-wrap"><span>02 · 爱好管理</span><iframe src="pages/02-hobbies.html" title="02 · 爱好管理" loading="lazy"></iframe></div>
+      <div class="phone-wrap"><span>03 · 记录录入</span><iframe src="pages/03-record.html" title="03 · 记录录入" loading="lazy"></iframe></div>
+      <div class="phone-wrap"><span>04 · 统计复盘</span><iframe src="pages/04-stats.html" title="04 · 统计复盘" loading="lazy"></iframe></div>
+      <div class="phone-wrap"><span>05 · 日历</span><iframe src="pages/05-calendar.html" title="05 · 日历" loading="lazy"></iframe></div>
+      <div class="phone-wrap"><span>06 · 设置</span><iframe src="pages/06-settings.html" title="06 · 设置" loading="lazy"></iframe></div>
+    </div>
+  </div>
+</body>
+</html>
